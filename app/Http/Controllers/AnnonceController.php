@@ -59,8 +59,8 @@ class AnnonceController extends Controller
         return true;
     }
 
-    public function deleteById(ANNONCE $ANNONCE) {
-        return $ANNONCE->delete();
+    public function deleteById(ANNONCE $annonce) {
+        return $annonce->delete();
     }
 
     public function updateById(ANNONCE $annonce, Request $request) {

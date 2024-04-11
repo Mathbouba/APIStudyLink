@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AnnonceController;
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/annonces',[AnnonceController::class, 'getAll']);
@@ -12,4 +13,4 @@ Route::delete('/annonces/delete/{annonce}',[AnnonceController::class, 'deleteByI
 Route::patch('/annonces/update/{annonce}',[AnnonceController::class, 'updateById']);
 
 
-Route::post('/message/create', [\App\Http\Controllers\MessageController::class, 'addMessage']);
+Route::post('/message/create', [MessageController::class, 'addMessage']);
