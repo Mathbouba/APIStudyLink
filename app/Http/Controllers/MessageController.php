@@ -22,4 +22,8 @@ class MessageController extends Controller
         $message->save();
         return true;
     }
+
+    public function getAll() {
+        return MESSAGEPRIVE::all();
+    }
 }

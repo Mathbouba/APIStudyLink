@@ -14,3 +14,4 @@ Route::patch('/annonces/update/{annonce}',[AnnonceController::class, 'updateById
 
 
 Route::post('/message/create', [MessageController::class, 'addMessage']);
+Route::get("/message", [MessageController::class, 'getAll']);
